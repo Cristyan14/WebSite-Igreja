@@ -1,9 +1,9 @@
 <?php
  
-    $dbHost = 'localhost:3306'; // 
-    $dbUsername = 'root';
+    $dbHost = ''; // 
+    $dbUsername = '';
     $dbPassword = '';
-    $dbName = 'mensageiros';
+    $dbName = '';
 
     
     $conexao = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
