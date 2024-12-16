@@ -1,0 +1,369 @@
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:wght@100..900&display=swap');
+
+body{
+  font-family: "Poppins";
+  background-color: rgb(218, 198, 198);
+}
+
+
+/* Menu */
+
+  .menu ul{
+    padding-right: 5%;
+    padding-top: 3%;
+  }
+
+  
+  a {
+    font-family: "Chillax-Medium";
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    max-height: 150px;
+  
+    max-width: 150px;
+  }
+  
+  #logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  #header {
+    box-sizing: border-box;
+    height: 70px;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #000000;
+
+  
+  }
+  
+  #menu {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+  }
+  
+  #menu a {
+  
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 0.5rem;
+  }
+  
+  #btn-mobile {
+    display: none;
+  }
+  
+  header img{
+    margin-top: 80px;
+    width: 150px;
+    height: 180px;
+  }
+  
+  header .a-header{
+    display: none;
+  }
+  
+  header .a-header button{
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.705);
+    width: 100px;
+    font-size: 11px;
+    background-color: black;
+  }
+
+  header p {
+    color: wheat;
+  }
+  
+  header img{
+    margin-top: -0.1px;
+  }
+
+  @media (max-width: 630px) {
+    #menu {
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 70px;
+      right: 0px;
+      background: black;
+      transition: 0.6s;
+      z-index: 1000;
+      height: 0;
+      visibility: hidden;
+      overflow-y: hidden;
+    }
+    header .a-header{
+      display: block;
+    }
+    #nav.active #menu {
+      height: 300px;
+      visibility: visible;
+      overflow-y: auto;
+    }
+    #menu a {
+      padding: 1rem 0;
+      margin: 0 1rem;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.767);
+    }
+    #btn-mobile {
+      display: flex;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+      gap: 0.5rem;
+      width: 100%;
+    }
+    #hamburger {
+      border-top: 2px solid;
+      width: 20px;
+      color: white;
+    }
+    #hamburger::after,
+    #hamburger::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: currentColor;
+      margin-top: 5px;
+      transition: 0.3s;
+      position: relative;
+    }
+    #nav.active #hamburger {
+      border-top-color: transparent;
+    }
+    #nav.active #hamburger::before {
+      transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+  }
+
+
+  .primeiros_passos {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    margin: 0 auto;
+
+    background-color: #000;
+    height: 500px;
+    border-radius: 20px;
+ 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: #f5f5dc; 
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right, #f5f5dc, #d2b48c);
+    border-image-slice: 1;
+}
+
+.limitador {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.div {
+ 
+    margin-top: 20px;  
+}
+
+label {
+    font-size: 20px;
+    color: #f5f5dc;
+    font-family: "DM Sans" ;
+    font-weight: 400;
+}
+
+input, select {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 14px;
+    border: none; 
+    border-bottom: 2px solid #d2b48c; 
+    background-color: transparent;
+    color: #d2b48c;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-bottom-color: #d2b48c; 
+    background-color: #1a1a1a; 
+}
+
+option {
+    background-color: #000; 
+    color: #f5f5dc; 
+}
+
+form {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d2b48c; /* Bege escuro */
+    color: #000;
+    cursor: pointer;
+    justify-content: center;
+    width: 300px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #f5f5dc; /* Bege claro */
+    color: #000;
+}
+
+@media (max-width: 500px){
+  .primeiros_passos {
+    width: 100%;
+    margin-top: 20px;
+    max-width: 300px;   
+    padding: 2%;
+}
+input, select {
+  width: 90%;
+  max-width: 300px;
+  padding: 10px;
+
+}
+}
+@media (max-width: 350px){
+  .primeiros_passos h1{
+    font-size: 17px;
+
+    text-align: center;
+  }
+  .primeiros_passos {
+    width: 100%;
+    margin-top: 20px;
+    max-width: 250px;   
+    padding: 2%;
+}
+input, select {
+  width: 90%;
+  max-width: 250px;
+  padding: 10px;
+
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #d2b48c; /* Bege escuro */
+  color: #000;
+  cursor: pointer;
+  justify-content: center;
+  width: 250px;
+  transition: all 0.3s ease;
+}
+
+}
+
+
+/* Desing rodape*/
+
+footer{
+    background-color: black;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+  
+  }
+
+footer .limitador{
+  padding: 2%;
+}
+
+footer .div-logo{
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+footer .div-logo img{
+  width: 200px;
+}
+
+footer .div-text ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .div-text ul li{
+  margin-left: 20px;
+}
+
+
+footer .div-icons{
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .div-icons svg{
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+footer .copyright{
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  
+}
+
+@media (max-width: 468px){
+  footer .div-text ul{
+    margin-top: -40px;
+    flex-direction: column;
+  }
+  footer .div-text ul li{
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  footer .div-icons{
+    justify-content: center;
+    align-items: center;
+  }
+}

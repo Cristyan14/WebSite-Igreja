@@ -1,0 +1,33 @@
+.tab {
+    border: 1px solid #ff0000;
+    display: none;
+
+
+}
+
+.tab.active {
+    border: 1px solid #ff0000;
+    display: block;
+}
+
+.tr {
+    border: 1px solid #ff0000;
+    display: none;
+
+
+}
+
+.tr.active {
+    border: 1px solid #ff0000;
+    display: block;
+}
+
+
+th{
+    padding-left: 20px;
+}
+
+td{
+    padding-left: 20px;
+}
+
